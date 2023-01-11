@@ -1,0 +1,22 @@
+.login_from--container,
+.signup_from--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  
+}
+.login_image--container,
+.signup_image--container {
+    background-image: url(https://www.aueb.gr/sites/default/files/library/Register.png);
+    height: 90vh;
+    background-size: cover;
+}
+
+@media screen and (max-whith: 756px) {
+    .login_image--container,
+    .signup_image--container{
+        display: none;
+    } 
+}
