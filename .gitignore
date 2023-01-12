@@ -2,6 +2,7 @@
 /backend/node_modules
 /backend/package-lock.json
 /backend/.env
+/client/.env
 /client/build
 
 /client/.env.local
