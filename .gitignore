@@ -3,7 +3,7 @@
 /backend/package-lock.json
 /backend/.env
 /client/.env
-
+/client/build
 
 /client/.env.local
 /client/.DS_Store
