@@ -36,7 +36,7 @@ export default function Home() {
             </Link>
         </div>
         <div className='sale-banner-container mt-4'>
-            <img src='https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png'/>
+
         <h2>Categorise</h2>
         <Row>
           {Categorise.map((category) => (
