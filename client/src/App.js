@@ -24,7 +24,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const socket = io(`ws://${process.env.IP_SERVER}`);
+    const socket = io("ws://127.0.0.1:3005");
     socket.off('notification').on('notification', (msgObg, user_id) => {
       // logic for notification
       if(user_id == user._id) {

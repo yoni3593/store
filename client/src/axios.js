@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: `https://${process.env.IP_SERVER}`
+    baseURL: 'http://127.0.0.1:3005'
 });
 
 export default instance;
