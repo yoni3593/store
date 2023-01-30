@@ -24,7 +24,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const socket = io("https://127.0.0.1:3006");
+    const socket = io("http://192.168.253.37:3006");
     socket.off('notification').on('notification', (msgObg, user_id) => {
       // logic for notification
       if(user_id == user._id) {
