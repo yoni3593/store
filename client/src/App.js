@@ -17,6 +17,8 @@ import EditProductPage from './pages/EditProduct';
 import { useEffect } from 'react';
 import { io } from 'socket.io-client'
 import { addNotification } from './features/userSlice';
+import WhatsAppButton from './components/WhatsAppButton';
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const socket = io("https://192.168.253.37:3006");
+    const socket = io("http://127.0.0.1:3006");
     socket.off('notification').on('notification', (msgObg, user_id) => {
       // logic for notification
       if(user_id == user._id) {
@@ -42,6 +44,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTopButton />
+        <WhatsAppButton phoneNumber="+972533912616" />
         <ScrollToTop />
         <Navigation />
         <Routes>

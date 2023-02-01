@@ -1,0 +1,23 @@
+.ScrollToTopButton {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+  }
+  
+  .ScrollToTopButton--show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .ScrollToTopButton i {
+    font-size: 20px;
+  }
+  
