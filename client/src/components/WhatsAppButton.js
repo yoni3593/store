@@ -5,8 +5,9 @@ import logo from "./Digital_Glyph_White.png";
 const WhatsAppButton = ({ phoneNumber }) => {
 const [showPopup, setShowPopup] = useState(false);
   const handleClick = () => {
-    window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}`);
+    window.open(`https://wa.me/${phoneNumber}?text=מה נשמע?`);
   };
+  
   return (
     <div className="WhatsAppButtonContainer">
       <button 

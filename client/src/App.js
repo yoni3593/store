@@ -75,7 +75,7 @@ function App() {
           <Route path='*' element={<Home />} />
         </Routes>
       <ScrollToTopButton />
-      <WhatsAppButton phoneNumber="+972533912616" />
+      <WhatsAppButton phoneNumber="972533912616" />
       </BrowserRouter>
     </div>
   );
