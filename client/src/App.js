@@ -26,7 +26,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const socket = io("https://10.0.0.5:3006");
+    const socket = io("https://balloon-shop.onrender.com");
     socket.off('notification').on('notification', (msgObg, user_id) => {
       // logic for notification
       if(user_id == user._id) {
